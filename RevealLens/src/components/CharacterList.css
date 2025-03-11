@@ -1,0 +1,18 @@
+.character-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .character-list li {
+    margin: 10px 0;
+  }
+  
+  .character-link {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+  }
+  
+  .character-link:hover {
+    color: darkblue;
+  }
