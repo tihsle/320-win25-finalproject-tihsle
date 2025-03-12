@@ -1,15 +1,14 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
-import App from '../App'
-import '@testing-library/jest-dom/extend-expect'
+import HomePage from '../components/HomePage'
 
-test('renders RevealLens heading on the home page', () => {
+test('renders the logo on the HomePage', () => {
   render(
     <MemoryRouter>
-      <App />
+      <HomePage />
     </MemoryRouter>
   )
-  const heading = screen.getByText(/RevealLens/i)
-  expect(heading).toBeInTheDocument()
+  const logoImage = screen.getByAltText(/RevealLens Logo/i)
+  expect(logoImage).toBeInTheDocument()
 })
